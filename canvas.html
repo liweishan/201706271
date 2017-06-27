@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			body{
+				background: black;
+			}
+			#canvas{
+				background: #fff;
+			}
+		</style>
+		<script>
+			window.onload=function(){
+				var oc=document.getElementById('canvas');
+				var gd=oc.getContext('2d');
+				gd.beginPath();
+				gd.moveTo(218,75);
+				gd.lineTo(185,174);
+				gd.lineTo(88,216);
+				gd.lineTo(187,242);
+				gd.lineTo(214,333);
+				gd.lineTo(254,239);
+				gd.lineTo(350,205);
+				gd.lineTo(251,179);
+				gd.closePath();
+				gd.strokeStyle='red';
+				gd.lineWidth=20;
+				gd.fillStyle='purple';
+				gd.fill();
+				gd.stroke();
+			}
+		</script>
+	</head>
+	<body>
+		<canvas width="800" height="600" id="canvas">
+			<span>升级新版本去吧</span>
+		</canvas>
+	</body>
+</html>
